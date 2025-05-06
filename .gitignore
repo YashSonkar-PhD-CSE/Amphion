@@ -57,6 +57,11 @@ processed_data
 data
 model_ckpt
 logs
+*.log
+*.wandb
+wandb/*
+wandb-*
+*-run
 *.lst
 source_audio
 result

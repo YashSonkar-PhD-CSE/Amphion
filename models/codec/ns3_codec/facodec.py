@@ -455,7 +455,7 @@ class FACodecDecoder(nn.Module):
         quantized=None,
     ):
         if get_vq:
-            return self.quantizer.get_emb()
+            return [q.get_emb() for q in self.quantizer]
         if vq is True:
             if eval_vq:
                 self.quantizer.eval()
